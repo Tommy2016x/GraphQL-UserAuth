@@ -6,7 +6,6 @@ type User{
     id: ID!
     email: String!
     password:String!
-    location:locationData
 }
 
 type Query {
@@ -17,7 +16,6 @@ type Mutation{
     signUp(email:String!,password:String!):String!
     logIn(email:String!,password:String):String!
 }
-
-`
+`;
 
 module.exports = typeDefs;
